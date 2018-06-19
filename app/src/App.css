@@ -2,27 +2,381 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.puppy {
+  background: url('https://images.unsplash.com/photo-1518155317743-a8ff43ea6a5f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1d03c3a79b1fa2f19333b14c51652ee5&auto=format&fit=crop&w=1350&q=80');
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+	flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  background-attachment: fixed;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.title {
+  margin-top: 5px;
   color: white;
+  font-size: 130px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.subtitle {
+  margin-top: 0px;
+  margin-bottom: 100px;
+  color: white;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-intro {
-  font-size: large;
+.find {
+  margin-top: 50px;
+  font-size: 80px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.easy {
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+}
+
+
+
+.arrow {
+  margin-top: 35vh;
+  width: 120px;
+  animation: float 3.5s ease-in-out infinite;
+  
+  
+}
+
+.search {
+  height: 780px;
+}
+
+.zipinput {
+  margin: auto;
+  text-align: center;
+  height: 30px;
+}
+
+.submitbutton {
+  margin-top: 30px;
+  background-color: #333333;
+    border: 8px;
+    border-radius: 6px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21.5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.23);
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 225px;
+    height: 63px;
+}
+
+.submitbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submitbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.submitbutton:hover span {
+  padding-right: 25px;
+}
+
+.submitbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.puppydisplay {
+  margin-top: 42px;
+  background-color: #333333;
+  height: 630px;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+  align-content: center;
+}
+
+.backgroundfav {
+  margin-top: 50px;
+  background-color: #333333;
+  height: 500px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.favcard {
+  background: white;
+  height: 390px;
+  width: 20vw;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+  align-content: center;
+  transition: all .2s ease-in-out;
+}
+
+.favcard:hover {
+  transform: scale(1.10);
+}
+
+.favcardbottom {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.favbutton {
+  margin: 10px;
+  margin-top: 10px;
+  background-color: #333333;
+    border: 8px;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+}
+
+.favcardpic {
+  height: 160px;
+}
+
+.favecardname {
+  margin-top: 9px;
+  text-align: center;
+  border: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  width: 120px;
+}
+
+.footer {
+  height: 280px;
+  background-color: white;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.bottomlogo {
+  height: 120px;
+  margin-top: 20px;
+}
+
+.bottomname {
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.map {
+  height: 250px;
+  width: 290px;
+  margin-left: 60px;
+}
+
+.puppycard {
+  margin-top: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 4px black;
+  padding: 20px;
+  height: 500px;
+  width: 380px;
+  background: white;
+  margin-bottom: 60px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.puppycard:hover {
+  transform: scale(1.10);
+}
+
+.puppyname {
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  height: 60px;
+  overflow-wrap: normal;
+  width: 370px;
+  margin-bottom: 10px;
+}
+
+.puppybox {
+  
+  
+  height: 200px;
+  padding: 5px;
+  
+}
+
+.doginfo {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.puppydescription {
+  font-size: 16.5px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.puppyphone {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  height: 70px;
+}
+
+.inputarea {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+  align-content: center;
+}
+
+
+
+.icons {
+  height: 65px;
+  transition: all .2s ease-in-out;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
+.icons:hover {
+  
+  transform: scale(1.50);
+}
+
+
+.findpup {
+  margin-top: 13px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+  align-content: center;
+  margin-bottom: 8px;
+}
+
+.foto {
+  height: 130px;
+  margin-left: 0px;
+}
+
+.foto1 {
+  height: 130px;
+  margin-right: 40px;
+  margin-left: 38px;
+  margin-top: 10px;
+}
+
+.barfoto {
+  height: 175px;
+  margin: 15px;
+  margin-top: 40px;
+}
+
+.bar {
+  height: 330px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  
+}
+
+.midbar {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+.favbutton {
+  height: 30px;
+  transition: all .2s ease-in-out;
+}
+
+.favbutton:hover {
+  
+  transform: scale(1.20);
+}
+
+.whitepaw {
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.headerlogos {
+  margin-top: 30px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+}
+
+
+@keyframes float {
+	0% {
+		box-shadow: rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow:  rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
