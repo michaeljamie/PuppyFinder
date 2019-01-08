@@ -1,6 +1,8 @@
 # Puppy Finder
 
-A basic app allowing users to see adoptable dogs in their area and provides details for them to connect with their future pups. 🐶
+A basic app built in React which allows users to browse adoptable dogs in their area and provides details for them to connect with their future pups. 🐶  
+
+Users experience a Tinder-like interface where they can like an add a dog to their favorites, or 'swipe-left' and go to the next dog.
 
 Linked to the [Petfinder API](https://www.petfinder.com/developers/api-docs "Petfinder API Documentation").
 
